@@ -11,6 +11,7 @@ An android app version of Yatto.me, capable of pulling data from the tap titans 
  - Sequencer
   - Current sequence
   - Simulate salvages
+  - Optimise salvages based on priority
   - Weapon sequence (?)
 
 # Planned:
