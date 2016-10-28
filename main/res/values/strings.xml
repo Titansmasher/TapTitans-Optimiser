@@ -47,7 +47,7 @@
     <h4>Sequencer</h4>
 
     <p>The sequencer provides a way to work out what the order of your artifacts will be.
-    This is done by using the artifact seed for the selected world as a <a href="https://en.wikipedia.org/wiki/Random_seed">seed</a> for a <a href="http://i.imgur.com/FKLfl7l.jpg">RNG</a>
+    This is done by using the artifact seed for the selected world as a <a href="https://en.wikipedia.org/wiki/Random_seed">seed</a> for a RNG.
     The order of artifacts can only be influenced by your decision to salvage or not. A more detailed explanation of how this is done can be found <a href="http://yatto.me/#/sequencer">here</a>
     A sequencer for your weapons is also included, however this cannot be manipulated so its purely informative.</p>
 
