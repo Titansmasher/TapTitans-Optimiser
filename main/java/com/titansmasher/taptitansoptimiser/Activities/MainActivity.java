@@ -1,3 +1,5 @@
+//Dont look here, its horribly messy and badly designed. Shoo, go away!
+
 package com.titansmasher.taptitansoptimiser.Activities;
 
 import android.Manifest;
@@ -73,6 +75,8 @@ import java.util.logging.LogRecord;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+        
+    //I said dont look here! Dont judge me
 
     private File saveLocation;
     private SharedPreferences preferences;
