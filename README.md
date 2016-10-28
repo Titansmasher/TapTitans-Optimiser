@@ -9,6 +9,11 @@ An android app version of Yatto.me, capable of pulling data from the tap titans 
   - Calculated values displayed
  - Sequencer
   - Current sequence
+
+# Planned:
+ - Ui
+  - Impliment chatheads technology to allow grids to overlay the tap titans app
+ - Sequencer
   - Simulate salvages
   - Optimise salvages based on priority
   - Weapon sequence (?)
@@ -17,8 +22,6 @@ An android app version of Yatto.me, capable of pulling data from the tap titans 
   - Create new blank save
   - Switch saves
   - Switch world
-
-# Planned:
  - Save management
   - Clone save
   - Edit save (not save from game file)
