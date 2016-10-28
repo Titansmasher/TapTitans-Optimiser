@@ -13,6 +13,11 @@ An android app version of Yatto.me, capable of pulling data from the tap titans 
 # Planned:
  - Ui
   - Impliment chatheads technology to allow grids to overlay the tap titans app
+   - Sample code found here: http://androidsrc.net/facebook-chat-like-floating-chat-heads/
+  - General UI Imporvements
+   - Layout
+   - Icons
+   - Colour scheme
  - Sequencer
   - Simulate salvages
   - Optimise salvages based on priority
@@ -26,14 +31,4 @@ An android app version of Yatto.me, capable of pulling data from the tap titans 
   - Clone save
   - Edit save (not save from game file)
   - Persist saves between sessions
-  - Write save to file (maybe? I have concerns over this app being used as a modding tool)
-  
- - Floating "Chat heads" to open app from ingame
-  - Sample code found here: http://androidsrc.net/facebook-chat-like-floating-chat-heads/
-  
- - Styling, so much styling (Accepting offers to help with this after initial release)
-  - Icons
-  - Themes
-  - Animations
-  - Layout
-  - Rotation
+  - Write save to file (maybe? I have concerns over this app being used as a modding tool) 
