@@ -1,0 +1,2073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:animateLayoutChanges="true"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sequencer_seed"
+                />
+
+            <TextView
+                android:id="@+id/sequencer_currentseed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+
+    <ToggleButton
+        android:id="@+id/sequencer_togglebutton_showpriorities"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="@string/sequencer_button_artifactpriorities_show"
+        android:textOn="@string/sequencer_button_artifactpriorities_hide"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/seqquencer_table_artifactpriorities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TableLayout
+            android:id="@+id/sequencer_artifacts_world1table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:stretchColumns="0,1,2"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sequencer_artifact_nameheader"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sequencer_artifact_ownedheader"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sequencer_artifact_priorityheader"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact1"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact1_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact1_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact2"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact2_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact2_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact3"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact3_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact3_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact4"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact4_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact4_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact5"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact5_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact5_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact6"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact6_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact6_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact7"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact7_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact7_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact8"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact8_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact8_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact9"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact9_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact9_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact10"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact10_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact10_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact11"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact11_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact11_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact12"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact12_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact12_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact13"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact13_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact13_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact14"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact14_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact14_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact15"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact15_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact15_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact16"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact16_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact16_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact17"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact17_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact17_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact18"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact18_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact18_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact19"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact19_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact19_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact20"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact20_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact20_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact21"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact21_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact21_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact22"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact22_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact22_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact23"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact23_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact23_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact24"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact24_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact24_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact25"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact25_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact25_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact26"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact26_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact26_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact27"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact27_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact27_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact28"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact28_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact28_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact29"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact29_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact29_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact30"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact30_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact30_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/sequencer_artifacts_world2table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:stretchColumns="0,1,2"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sequencer_artifact_nameheader"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sequencer_artifact_ownedheader"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sequencer_artifact_priorityheader"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact31"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact31_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact31_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact32"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact32_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact32_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact33"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact33_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact33_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact34"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact34_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact34_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact35"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact35_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact35_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact36"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact36_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact36_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact37"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact37_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact37_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact38"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact38_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact38_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact39"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact39_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact39_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact40"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact40_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact40_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact41"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact41_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact41_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact42"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact42_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact42_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact43"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact43_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact43_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact44"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact44_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact44_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact45"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact45_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact45_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact46"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact46_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact46_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact47"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact47_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact47_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact48"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact48_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact48_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact49"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact49_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact49_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact50"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact50_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact50_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact51"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact51_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact51_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact52"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact52_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact52_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact53"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact53_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact53_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact54"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact54_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact54_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact55"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact55_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact55_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact56"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact56_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact56_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact57"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact57_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact57_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact58"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact58_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact58_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact59"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact59_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact59_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact60"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact60_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact60_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact61"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact61_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact61_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact62"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact62_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact62_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact63"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact63_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact63_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact64"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact64_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact64_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact65"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact65_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact65_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact66"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact66_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact66_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact67"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact67_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact67_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact68"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact68_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact68_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/row_alternate">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact69"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact69_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact69_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_artifact70"/>
+
+                <CheckBox
+                    android:id="@+id/sequencer_artifacts_artifact70_owned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"/>
+
+                <EditText
+                    android:id="@+id/sequencer_artifacts_artifact70_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:visibility="gone"/>
+
+    <TextView
+            android:text="@string/sequencer_outputheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sequencer_outputtable"
+            android:stretchColumns="0,1">
+
+        </TableLayout>
+
+        <TextView
+            android:text="@string/sequencer_optimiserheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="gone"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sequencer_optimisedtable"
+            android:stretchColumns="0,1">
+
+        </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.titansmasher.taptitansoptimiser.Activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/main_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/tab_stats"
+                android:text="@string/tab_stats"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_optimizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/tab_optimiser"
+                android:text="@string/tab_optimiser"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_sequencer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/tab_sequencer"
+                android:text="@string/tab_sequencer"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_faqabout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/tab_faqabout"
+                android:text="@string/tab_faqabout"/>
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/main_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:animateLayoutChanges="true">
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

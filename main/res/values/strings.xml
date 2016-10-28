@@ -1,0 +1,226 @@
+<resources>
+    <string name="app_name">Optimiser for Tap Titans</string>
+
+    <string name="tapTitans_name">com.gamehivecorp.taptitans</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="tab_stats">Stats</string>
+    <string name="tab_optimiser">Optimiser</string>
+    <string name="tab_sequencer">Sequence</string>
+    <string name="tab_faqabout">FAQ + About</string>
+
+    <string name="appDesc_titansmasher"><![CDATA[Created by <a href="https://www.reddit.com/user/Titansmasher_/">/u/Titansmasher_</a><br/>Inspired by <a href="http://yatto.me/">YATTO.me</a>!]]></string>
+    <string name="content_faqabouttext"><![CDATA[<h1>What is this app?</h1>
+
+    <p>This app is an android port of the ever popular <a href="http://yatto.me">YATTO.me</a> (Credit: <a href="https://www.reddit.com/user/colblitz">/u/colblitz</a>)
+    made by <a href="https://www.reddit.com/user/titansmasher_">/u/Titansmasher_</a>.
+    <br/>This apps main function is to read your save file and use the data from that to optimize your artifact levelling, and a few extras!</p>
+
+    <h1>How do I use it?</h1>
+
+    <p>The main uses of this app is to; optimize your relic spending, inform you as to your artifact sequence, and show you various "hidden" stats in the game<br/>
+    To get started, allow the app access to read your files.
+    This will allow the app to use your <a href="https://play.google.com/store/apps/details?id=com.gamehivecorp.taptitans">Tap Titans</a> save file to pre-populate all your data.
+    While this isn\'t required for the app to function, if you don\'t allow it then I would recommend just using <a href="http://yatto.me">Yatto.me</a> on your computer.<br/><br/>
+    Once done, you should now see all your game data for world 1 displayed on the \"Stats\" page.
+    From here, you can use the tabs at the top to change the page you are viewing and the sidebar to switch worlds or create a new mock save (More on that later)</p>
+
+    <h4>Stats</h4>
+
+    <p>The stats page is the apps landing page. Here you will be able to see all the general stats about the currently selected save file neatly organized into sections.<br/>
+    To view the stats for a different world, simply open the sidebar and tap on a different world! Couldn\'t be simpler</p>
+
+    <h4>Optimiser</h4>
+
+    <p>This page is the main feature of the app.
+    This is the main feature of the app. In simple terms the 4 bottons correspond to a method of working out what is the most efficient artifacts to spend your relics on.
+    This will show up to 100 purchases, or to your relic limit, whichever is smaller.<br/><br/>
+    <b>&#149; Gold</b> - optimize for greatest gold gains, should match up with the gold column in the AEC (with maybe slight differences for Future\'s Fortune)<br/>
+	<b>&#149; All damage</b> - optimize for all damage (just getting the highest percentage)<br/>
+	<b>&#149; Tap damage</b> - optimize for tap damage, which differs from all damage in that it also takes into consideration things like crits, hero levels, weapons, customizations, etc.<br/>
+	<b>&#149; Dmg Equivalent</b> - the newest method, uses the formula from <a href="http://redd.it/35e0wd">this thread</a> to convert gold increase to an equivalent damage increase in order to optimize for both at the same time<br/>
+    </p>
+
+    <h4>Sequencer</h4>
+
+    <p>The sequencer provides a way to work out what the order of your artifacts will be.
+    This is done by using the artifact seed for the selected world as a <a href="https://en.wikipedia.org/wiki/Random_seed">seed</a> for a <a href="http://i.imgur.com/FKLfl7l.jpg">RNG</a>
+    The order of artifacts can only be influenced by your decision to salvage or not. A more detailed explanation of how this is done can be found <a href="http://yatto.me/#/sequencer">here</a>
+    A sequencer for your weapons is also included, however this cannot be manipulated so its purely informative.</p>
+
+    <h4>Faq + About</h4>
+
+    <p>Well&#8230; youre already here so&#8230; its this page.</p>
+
+    <h1>XXX is not working!</h1>
+
+    <p>Send me a message on <a href="https://www.reddit.com/message/compose/?to=Titansmasher_">reddit</a> here with what your issue was and I\'ll see what I can do to help!</p>
+
+    <h1>Thanks and credits</h1>
+
+    <p>
+        &#149;<a href="http://www.reddit.com/user/colblitz" class="ng-binding">/u/colblitz</a> for the original <a href="http://yatto.me/">YATTO.me</a><br/>
+        &#149;<a href="http://www.reddit.com/user/olaudix" class="ng-binding">/u/olaudix</a> for his original <a href="https://github.com/oLaudix/oLaudix.github.io">optimiser</a> that <a href="https://www.reddit.com/user/colblitz">/u/colblitz</a> got a bunch of formulas from<br/>
+		&#149;<a href="http://www.reddit.com/user/gxgx55" class="ng-binding">/u/gxgx55</a> and <a href="http://www.reddit.com/user/bsedmonds" class="ng-binding">/u/bsedmonds</a> for the current spreadsheets (<a href="http://redd.it/2xypot">here</a> and <a href="http://redd.it/303ngz">here</a>)<br/>
+		&#149;<a href="http://www.reddit.com/user/asynchronism" class="ng-binding">/u/asynchronism</a> for <a href="http://redd.it/32m0r4">the everything spreadsheet</a><br/>
+		&#149;<a href="http://www.reddit.com/user/einzen91" class="ng-binding">/u/einzen91</a> for <a href="http://redd.it/3162h7">stage progression times</a><br/>
+		&#149;<a href="http://www.reddit.com/user/TheDutchman88" class="ng-binding">/u/TheDutchman88</a> for <a href="http://redd.it/2u7scp">hero upgrade costs</a><br/>
+		&#149;<a href="http://www.reddit.com/user/contigi" class="ng-binding">/u/contigi</a> for <a href="http://redd.it/317usc">damage and gold formulas</a><br/>
+		&#149;<a href="http://www.reddit.com/user/ah_b" class="ng-binding">/u/ah_b</a> for the <a href="http://redd.it/35e0wd">relationship between gold and damage</a><br/>
+		&#149;<a href="http://www.reddit.com/user/raffishtenant" class="ng-binding">/u/raffishtenant</a> for the <a href="http://redd.it/33smgn">probability of completing weapon sets</a><br/>
+		&#149;<a href="http://www.reddit.com/user/LucasGaspar" class="ng-binding">/u/LucasGaspar</a> for the <a href="http://redd.it/32e49l">artifact sequencer</a><br/>
+		&#149;<a href="http://www.reddit.com/user/remarkable_flexatron" class="ng-binding">/u/remarkable_flexatron</a> for the <a href="http://redd.it/35i3tx">artifact sequence spreadsheet</a><br/>
+		&#149;<a href="http://www.reddit.com/user/ViperOus" class="ng-binding">/u/ViperOus</a> and <a href="http://www.reddit.com/user/TheHunterAsura" class="ng-binding">/u/TheHunterAsura</a> for helping to get <a href="https://redd.it/4ldri9">W2 artifact ids</a><br/>
+		&#149;<a href="http://www.reddit.com/user/contigi" class="ng-binding">/u/contigi</a> and <a href="http://www.reddit.com/user/MacaroonX" class="ng-binding">/u/MacaroonX</a> for updated W1 formulas<br/>
+		&#149;<a href="http://www.reddit.com/user/malohkan" class="ng-binding">/u/malohkan</a> for helping with the W2 sequencer<br/>
+	</p>]]></string>
+
+    <string name="game_diamonds1">180</string>
+    <string name="game_diamonds2">500</string>
+    <string name="game_diamonds3">1200</string>
+    <string name="game_diamonds4">3100</string>
+    <string name="game_diamonds5">6500</string>
+    <string name="game_diamonds6">14000</string>
+
+    <string name="stats_purchases_diamonds1">" • 180 diamonds"</string>
+    <string name="stats_purchases_diamonds2">" • 500 diamonds"</string>
+    <string name="stats_purchases_diamonds3">" • 1200 diamonds"</string>
+    <string name="stats_purchases_diamonds4">" • 3100 diamonds"</string>
+    <string name="stats_purchases_diamonds5">" • 6500 diamonds"</string>
+    <string name="stats_purchases_diamonds6">" • 14000 diamonds"</string>
+
+    <string name="game_artifact1">Knight\'s Shield</string>
+    <string name="game_artifact2">Amulet of the Valrunes</string>
+    <string name="game_artifact3">Dark Cloak of Life</string>
+    <string name="game_artifact4">Death Seeker</string>
+    <string name="game_artifact5">Savior Shield</string>
+    <string name="game_artifact6">Overseer\'s Lotion</string>
+    <string name="game_artifact7">Sacred Scroll</string>
+    <string name="game_artifact8">Hunter\'s Ointment</string>
+    <string name="game_artifact9">Laborer\'s Pendant</string>
+    <string name="game_artifact10">Barbarian\'s Mettle</string>
+    <string name="game_artifact11">Saintly Shield</string>
+    <string name="game_artifact12">Ogre\'s Gauntlet</string>
+    <string name="game_artifact13">Parchment of Importance</string>
+    <string name="game_artifact14">Universal Fissure</string>
+    <string name="game_artifact15">Ring of Opulence</string>
+    <string name="game_artifact16">Axe of Resolution</string>
+    <string name="game_artifact17">Hero\'s Thrust</string>
+    <string name="game_artifact18">Crown Egg</string>
+    <string name="game_artifact19">Chest of Contentment</string>
+    <string name="game_artifact20">Future\'s Fortune</string>
+    <string name="game_artifact21">Divine Chalice</string>
+    <string name="game_artifact22">Undead Aura</string>
+    <string name="game_artifact23">Warrior\'s Revival</string>
+    <string name="game_artifact24">Ring of Wondrous Charm</string>
+    <string name="game_artifact25">Worldly Illuminator</string>
+    <string name="game_artifact26">Tincture of the Maker</string>
+    <string name="game_artifact27">Crafter\'s Elixir</string>
+    <string name="game_artifact28">Otherworldly Armor</string>
+    <string name="game_artifact29">Drunken Hammer</string>
+    <string name="game_artifact30">Brew of Absorption</string>
+    <string name="game_artifact31">Mage\'s Mantle</string>
+    <string name="game_artifact32">Crown of Cleopatra</string>
+    <string name="game_artifact33">Shock Gauntlets</string>
+    <string name="game_artifact34">Scroll of Lightning</string>
+    <string name="game_artifact35">Wand of Wonder</string>
+    <string name="game_artifact36">Merlin\'s Globe</string>
+    <string name="game_artifact37">Pandora\'s Music Box</string>
+    <string name="game_artifact38">Demon Horns</string>
+    <string name="game_artifact39">Necklace of Nether</string>
+    <string name="game_artifact40">Chilling Chalice</string>
+    <string name="game_artifact41">Boots of Wilting</string>
+    <string name="game_artifact42">Phoenix Renewed</string>
+    <string name="game_artifact43">Magic Mist</string>
+    <string name="game_artifact44">Elixir of Verve</string>
+    <string name="game_artifact45">Vial of Frost</string>
+    <string name="game_artifact46">Swift Swill</string>
+    <string name="game_artifact47">Mercury\'s Earring</string>
+    <string name="game_artifact48">Braid of Binding</string>
+    <string name="game_artifact49">Annihilation Orb</string>
+    <string name="game_artifact50">Ring of Fire</string>
+    <string name="game_artifact51">Ra\'s Ring</string>
+    <string name="game_artifact52">Atomic Wand</string>
+    <string name="game_artifact53">Aphrodite\'s Baton</string>
+    <string name="game_artifact54">Anointment Ointment</string>
+    <string name="game_artifact55">Amulet of Storms</string>
+    <string name="game_artifact56">Mark of Dominance</string>
+    <string name="game_artifact57">Azure Dragon Statuette</string>
+    <string name="game_artifact58">Conjuror Crystal</string>
+    <string name="game_artifact59">Petals of Protection</string>
+    <string name="game_artifact60">Mirror of Refraction</string>
+    <string name="game_artifact61">Horseshoe of Fortune</string>
+    <string name="game_artifact62">Rod of Great Gales</string>
+    <string name="game_artifact63">Rope of Lashes</string>
+    <string name="game_artifact64">Scarab of Insanity</string>
+    <string name="game_artifact65">Slippers of Sleep</string>
+    <string name="game_artifact66">Cosmic Candle</string>
+    <string name="game_artifact67">Circe\'s Mirror</string>
+    <string name="game_artifact68">Morgana\'s Goblet</string>
+    <string name="game_artifact69">Harp of Medea</string>
+    <string name="game_artifact70">Inebriated Staff</string>
+
+    <string name="stats_account_header">Account</string>
+    <string name="stats_purchases_header">Purchases</string>
+    <string name="stats_world_header">World Specifics</string>
+    <string name="stats_artifact_header">Artifacts</string>
+
+    <string name="stats_account_playername">Player name</string>
+    <string name="stats_account_friendcode">Friend code</string>
+    <string name="stats_account_playerlevel">Player level</string>
+    <string name="stats_account_lastactive">Last active</string>
+    <string name="stats_account_playtime">Play time</string>
+    <string name="stats_account_diamonds">Diamonds</string>
+    <string name="stats_account_artifactseed">Artifact seed</string>
+    <string name="stats_account_weaponseed">Weapon seed</string>
+    <string name="stats_account_timesincesync">Time since sync</string>
+    <string name="stats_account_dungeonchain">Daily dungeon #</string>
+    <string name="stats_account_lastcloudsave">Last cloud save</string>
+    <string name="stats_account_ischeater">Cheater?</string>
+    <string name="stats_account_cheatercount">" • Times cheated"</string>
+    <string name="stats_account_cheaterreason">" • Cheater reason"</string>
+
+    <string name="stats_purchases_purchasecount">Purchase count</string>
+    <string name="stats_purchases_spendamount">Total spent (USD)</string>
+    <string name="stats_purchases_unapprovedpurchases">Unapproved purchases</string>
+    <string name="stats_purchases_purchaseslist">Purchases:</string>
+
+    <string name="stats_world_maxstage">Max stage</string>
+    <string name="stats_world_currentstage">Current stage</string>
+    <string name="stats_world_relics">Relics</string>
+    <string name="stats_world_totalgold">Total gold</string>
+    <string name="stats_world_goldlost">Gold lost (Prestige)</string>
+    <string name="stats_world_dpslost">DPS lost (Prestige)</string>
+    <string name="stats_world_totalrelics">Total relics</string>
+
+    <string name="stats_artifact_nameheader">Artifact</string>
+    <string name="stats_artifact_levelheader">Level</string>
+    <string name="stats_artifact_relicsheader">Total relics</string>
+
+
+    <string name="sequencer_seed">Artifact seed</string>
+    <string name="sequencer_button_artifactpriorities_show">Show priorities</string>
+    <string name="sequencer_button_artifactpriorities_hide">Hide priorities</string>
+
+    <string name="sequencer_artifact_nameheader">Artifact</string>
+    <string name="sequencer_artifact_ownedheader">Owned</string>
+    <string name="sequencer_artifact_priorityheader">Priority</string>
+    <string name="sequencer_outputheader">Artifact sequence</string>
+    <string name="sequencer_optimiserheader">Optimised Sequence</string>
+    <string name="sequencer_order_nameheader">Artifact</string>
+    <string name="sequencer_order_salvageheader">Salvage?</string>
+
+    <string name="optimiser_sequenceheader">Purchase Order</string>
+    <string name="optimiser_totalsheader">Totals</string>
+    <string name="optimiser_dmgbutton">DMG</string>
+    <string name="optimiser_goldbutton">Gold</string>
+    <string name="optimiser_tdmgbutton">TDMG</string>
+    <string name="optimiser_dmgebutton">DMGE</string>
+    <string name="optimiser_nextbreakpoint">Next breakpoint</string>
+    <string name="optimiser_prestigerelics">Relics from prestige</string>
+    <string name="optimiser_breakpointrelics">Relics at next breakpoint</string>
+    <string name="optimiser_currentrelics">Current relics</string>
+</resources>
