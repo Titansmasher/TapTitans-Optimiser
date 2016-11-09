@@ -1,28 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.titansmasher.taptitansoptimiser">
+          package="com.titansmasher.taptitansoptimizer">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.titansmasher.taptitansoptimiser.OptimiserApp"
+        android:name="com.titansmasher.taptitansoptimizer.OptimiserApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service android:name="com.titansmasher.taptitansoptimizer.UI.FloatingWidgetService"/>
         <activity
-            android:name=".Activities.MainActivity"
+            android:name="com.titansmasher.taptitansoptimizer.UI.LandingActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.titansmasher.taptitansoptimizer.UI.StatsActivity"
+            android:label="@string/landing_stats"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.titansmasher.taptitansoptimizer.UI.OptimiserActivity"
+            android:label="@string/landing_optimiser"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.titansmasher.taptitansoptimizer.UI.SequencerActivity"
+            android:label="@string/landing_sequencer"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.titansmasher.taptitansoptimizer.UI.SaveManagerActivity"
+            android:label="@string/landing_savemanagement"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.titansmasher.taptitansoptimizer.UI.FaqAboutActivity"
+            android:label="@string/landing_faqthanks"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name="com.titansmasher.taptitansoptimizer.UI.SettingsActivity"
+            android:label="@string/landing_settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name="com.titansmasher.taptitansoptimizer.UI.DonateActivity"
+            android:label="@string/landing_donate"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
+
 
 </manifest>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="9dp"
+    android:paddingBottom="9dp"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+        app:srcCompat="@drawable/landing_button_stats"
+        android:id="@+id/landing_button_stats"
+        android:layout_width="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="9dp"
+        android:layout_gravity="center"/>
+
+        <TextView
+            android:text="@string/landing_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/landing_button_stats_text"
+            android:textStyle="bold"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            app:srcCompat="@drawable/landing_button_optimiser"
+            android:id="@+id/landing_button_optimiser"
+            android:layout_width="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="9dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:text="@string/landing_optimiser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/landing_button_optimiser_text"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            app:srcCompat="@drawable/landing_button_sequencer"
+            android:id="@+id/landing_button_sequencer"
+            android:layout_width="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="9dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:text="@string/landing_sequencer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/landing_button_sequencer_text"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            app:srcCompat="@drawable/landing_button_savemanagement"
+            android:id="@+id/landing_button_savemanager"
+            android:layout_width="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="9dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:text="@string/landing_savemanagement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/landing_button_savemanagement_text"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            app:srcCompat="@drawable/landing_button_faqabout"
+            android:id="@+id/landing_button_faqabout"
+            android:layout_width="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="9dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:text="@string/landing_faqthanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/landing_button_faqabout_text"
+            android:textStyle="bold"/>
+    </FrameLayout>
+</LinearLayout>

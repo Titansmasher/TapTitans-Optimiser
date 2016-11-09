@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusableInTouchMode="true"
+              android:focusable="true"
+              android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3"
+        android:animateLayoutChanges="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/optimiser_settings_relics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/optimiser_artifact_relics"
+                android:singleLine="true"
+                android:layout_span="2"/>
+
+            <Button
+                android:text="@string/optimiser_settings_resetrelics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/optimiser_artifact_resetrelics"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/optimiser_settings_steps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/optimiser_artifact_steps"
+                android:layout_span="2"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:text="@string/optimiser_settings_heroheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="@string/optimiser_settings_heros_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/optimiser_artifact_heros_all"/>
+
+            <Button
+                android:text="@string/optimiser_settings_heros_fromsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/optimiser_artifact_heros_fromsave"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <CheckBox
+        android:text="@string/optimiser_settings_useallrelics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optimiser_settings_useallrelics"/>
+
+</LinearLayout>

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:animateLayoutChanges="true">
+
+    <Button
+        android:id="@+id/save_customisation_savechanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save changes"/>
+
+    <TextView
+        android:id="@+id/save_customisation_noedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The save file selected is not editable. Please change save file to edit the artifact info"/>
+
+    <LinearLayout
+        android:id="@+id/save_customisation_tables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_customisation_swordheader"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/save_customisation_swordheader"/>
+
+        <LinearLayout
+            android:id="@+id/save_customisation_swords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:animateLayoutChanges="true">
+
+            <CheckBox
+                android:id="@+id/save_customisation3_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_0"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_901"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_901"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_902"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_902"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_903"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_903"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_904"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_904"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_905"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_905"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_906"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_906"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_907"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_907"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_19"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_3"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_4"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_29"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_909"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_909"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_22"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_12"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_30"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_26"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_1"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_13"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_5"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_15"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_10"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_25"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_20"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_21"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_14"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_11"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_7"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_18"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_17"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation3_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation3_28"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_customisation_scarfheader"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/save_customisation_scarfheader"/>
+
+        <LinearLayout
+            android:id="@+id/save_customisation_scarves"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:animateLayoutChanges="true">
+
+            <CheckBox
+                android:id="@+id/save_customisation1_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_0"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_9"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_1"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_3"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_2"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_11"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_8"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_4"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_5"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_6"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_7"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation1_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation1_10"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_customisation_hatheader"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/save_customisation_hatheader"/>
+
+        <LinearLayout
+            android:id="@+id/save_customisation_hats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:animateLayoutChanges="true">
+
+            <CheckBox
+                android:id="@+id/save_customisation0_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_0"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_14"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_2"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_3"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_6"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_1"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_4"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_5"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_8"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_7"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_9"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_10"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_13"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation0_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation0_11"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_customisation_auraheader"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/save_customisation_auraheader"/>
+
+        <LinearLayout
+            android:id="@+id/save_customisation_auras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:animateLayoutChanges="true">
+
+            <CheckBox
+                android:id="@+id/save_customisation5_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_0"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_1"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_2"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_3"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_5"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_4"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_8"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_6"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_7"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_9"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation5_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation5_10"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_customisation_shirtheader"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/save_customisation_clothesheader"/>
+
+        <LinearLayout
+            android:id="@+id/save_customisation_clothes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:animateLayoutChanges="true">
+
+            <CheckBox
+                android:id="@+id/save_customisation2_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_0"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_3"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_1"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_2"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_4"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_6"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_14"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_10"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_13"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_8"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_9"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_11"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_12"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_17"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_16"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_5"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation2_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation2_15"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_customisation_trailheader"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/save_customisation_trailheader"/>
+
+        <LinearLayout
+            android:id="@+id/save_customisation_trails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:animateLayoutChanges="true">
+
+            <CheckBox
+                android:id="@+id/save_customisation4_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_0"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_1"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_2"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_3"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_4"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_5"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_6"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_7"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_8"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_9"/>
+
+            <CheckBox
+                android:id="@+id/save_customisation4_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_customisation4_10"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

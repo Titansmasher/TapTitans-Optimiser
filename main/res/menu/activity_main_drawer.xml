@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/nav_world"
-        android:title="World">
-        <menu>
-            <item
-                android:id="@+id/nav_world_1"
-                android:checkable="true"
-                android:icon="?android:attr/textCheckMark"
-                android:title="World 1"/>
-            <item
-                android:id="@+id/nav_world_2"
-                android:checkable="true"
-                android:icon="?android:attr/textCheckMark"
-                android:title="World 2"/>
-        </menu>
-    </item>
-
-    <item
-        android:id="@+id/nav_save"
-        android:title="Save File">
-        <menu>
-        </menu>
-    </item>
+    <group
+        android:checkableBehavior="all"
+        >
+        <item android:title="Home screen"
+              android:id="@+id/nav_back"
+              android:icon="?attr/homeAsUpIndicator"/>
+        <item android:title="Grant file read permissions"
+              android:id="@+id/nav_grantperms"
+              android:icon="?android:attr/alertDialogIcon"/>
+        <item android:title="World"
+              android:id="@+id/nav_worldselector"
+            >
+                <menu>
+                    <item
+                        android:id="@+id/nav_world1"
+                        android:icon="@drawable/world_1_icon"
+                        android:checkable="true"
+                        android:title="World 1"/>
+                    <item
+                        android:id="@+id/nav_world2"
+                        android:icon="@drawable/world_2_icon"
+                        android:title="World 2"
+                        android:checkable="true"/>
+                </menu>
+            </item>
+        <item android:title="Saves"
+              android:id="@+id/nav_saveselector">
+                <menu>
+                </menu>
+            </item>
+    </group>
 
 </menu>

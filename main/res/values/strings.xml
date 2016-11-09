@@ -1,96 +1,269 @@
 <resources>
     <string name="app_name">Optimiser for Tap Titans</string>
-
     <string name="tapTitans_name">com.gamehivecorp.taptitans</string>
+
+    <string name="nav_header_description"><![CDATA[Created by <a href="https://www.reddit.com/user/Titansmasher_/">/u/Titansmasher_</a>]]></string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="tab_stats">Stats</string>
-    <string name="tab_optimiser">Optimiser</string>
-    <string name="tab_sequencer">Sequence</string>
-    <string name="tab_faqabout">FAQ + About</string>
+    <string name="whats_new_message"><![CDATA[<b>Welcome to Optimiser for Tap Titans 2.0!</b><br/><br/>
+    As you will soon see, there have been a lot of changes in this version, most notably a complete UI overhaul.<br/>
+    A huge thank you goes out to xBard (/u/gal1gal222) for all the artwork that you can see, and for helping design the layout.<br/><br/>
+    <b>New features:</b><br/>
+    &#149; <b>Added floating panels!!</b><br/>
+     - Now you can pop the results from optimisations out into a floating window<br/>
+    &#149; Brand new UI<br/>
+    &#149; Performance improvements for relic optimisation<br/>
+    &#149; Improved customisability of the relic optimisation<br/>
+    &#149; Save management! Now you can mock saves.<br/>
+    &#149; Extended details on the stats page <br/><br/>
+    As always, im going to be continuing to add new features, so feel free to suggest anything!<br/>
+    If you need more details, check out the FAQ &amp; About pages.<br/><br/>
+    Thanks for using the app!<br/>
+    - Titansmasher
+    ]]></string>
+    <string name="welcome_message"><![CDATA[<b>Welcome to Optimiser for Tap Titans 2.0!</b><br/><br/>
+    Thank you for downloading this app, Ive spent a fair while on it getting everything working just right.<br/>
+    This app has several features, all of which have been detailed in the FAQ &amp; About section, so make sure you have a read through that.<br/><br/>
+    <b>Key features</b><br/>
+    &#149; Stats - View everything you didnt know about your player<br/>
+    &#149; Optimiser - Calculate the best way to spend your relics<br/>
+    &#149; Sequencer - Work out what artifact you will get next<br/>
+    &#149; Save manager - Play around with fake saves to work out what you want to do<br/>
+    &#149; Faq &amp; About - Learn more about the app<br/><br/>
+    I hope you enjoy the app and find it useful!<br/>
+    - Titansmasher
+    ]]></string>
 
-    <string name="appDesc_titansmasher"><![CDATA[Created by <a href="https://www.reddit.com/user/Titansmasher_/">/u/Titansmasher_</a><br/>Inspired by <a href="http://yatto.me/">YATTO.me</a>!]]></string>
-    <string name="content_faqabouttext"><![CDATA[<h1>What is this app?</h1>
+    <string name="action_settings">Settings</string>
+    <string name="action_support">Donate</string>
+
+    <string name="landing_stats">Statistics</string>
+    <string name="landing_optimiser">Optimiser</string>
+    <string name="landing_sequencer">Sequencer</string>
+    <string name="landing_savemanagement">Save Manager</string>
+    <string name="landing_faqthanks">Faq &amp; About</string>
+    <string name="landing_settings">Settings</string>
+    <string name="landing_donate">Donate</string>
+
+    <string name="nav_stats">Stats</string>
+    <string name="tab_stats_account">Account</string>
+    <string name="tab_stats_world">World</string>
+    <string name="tab_stats_artifact">Artifacts</string>
+    <string name="tab_stats_hero">Heros</string>
+    <string name="tab_optimiser_settings">Settings</string>
+    <string name="tab_optimiser_herolevels">Hero Levels</string>
+    <string name="tab_sequencer_artifact">Artifact</string>
+    <string name="tab_faqabout_about">About</string>
+    <string name="tab_faqabout_faq">FAQ</string>
+    <string name="tab_faqabout_credits">Credits</string>
+    <string name="tab_save_manage">Manage</string>
+    <string name="tab_save_editartifacts">Artifacts</string>
+    <string name="tab_save_editcustomisation">Custs</string>
+    <string name="tab_save_editgeneral">General</string>
+    <string name="tab_optimiser_dmg">DMG</string>
+    <string name="tab_optimiser_gold">Gold</string>
+    <string name="tab_optimiser_tdmg">TDMG</string>
+    <string name="tab_optimiser_dmge">DMGE</string>
+
+    <string name="settings_betadesc">Opting into the beta gives you early access to any new features im working on!</string>
+    <string name="settings_betalink">https://play.google.com/apps/testing/com.titansmasher.taptitansoptimizer</string>
+    <string name="settings_sourcelink">https://github.com/Titansmasher/TapTitans-Optimiser</string>
+    <string name="settings_howtorevoke">You cannot revoke permissions here. To do so you need to go into your app settings and manually revoke each permission</string>
+
+    <string name="donate_desc"><![CDATA[
+    <h3><i>Well hello there</i></h3>
+    <p>Firstly can I just say, thank you for checking out this app! Ive put quite a bit of time into this, so it means a lot that you took the time to use it!</p>
+    <p>Thanks for checking out the donation section, even if you dont donate. The buttons below will take you to a paypal donation site where you can choose to donate any amount.
+    <p>If you do donate, then thank you very much, its highly appreciated by both of us, and if you dont then thanks for taking the time to read this anyway :)</p>]]></string>
+
+    <string name="stats_account_general_header">General</string>
+    <string name="stats_account_purchases_header">Purchases</string>
+
+    <string name="stats_account_general_playername">Player name</string>
+    <string name="stats_account_general_friendcode">Friend code</string>
+    <string name="stats_account_general_playerlevel">Player level</string>
+    <string name="stats_account_general_lastactive">Last active</string>
+    <string name="stats_account_general_playtime">Play time</string>
+    <string name="stats_account_general_diamonds">Diamonds</string>
+    <string name="stats_account_general_timesincesync">Time since sync</string>
+    <string name="stats_account_general_dungeonchain">Daily dungeon #</string>
+    <string name="stats_account_general_lastcloudsave">Last cloud save</string>
+    <string name="stats_account_general_ischeater">Cheater?</string>
+    <string name="stats_account_general_cheatercount">" • Times cheated"</string>
+    <string name="stats_account_general_cheaterreason">" • Cheater reason"</string>
+
+    <string name="stats_account_purchases_purchasecount">Purchase count</string>
+    <string name="stats_account_purchases_spendamount">Total spent (USD)</string>
+    <string name="stats_account_purchases_unapprovedpurchases">Unapproved purchases</string>
+    <string name="stats_account_purchases_purchaseslist">Purchases:</string>
+
+    <string name="stats_account_purchases_diamonds1">" • 180 diamonds"</string>
+    <string name="stats_account_purchases_diamonds2">" • 500 diamonds"</string>
+    <string name="stats_account_purchases_diamonds3">" • 1200 diamonds"</string>
+    <string name="stats_account_purchases_diamonds4">" • 3100 diamonds"</string>
+    <string name="stats_account_purchases_diamonds5">" • 6500 diamonds"</string>
+    <string name="stats_account_purchases_diamonds6">" • 14000 diamonds"</string>
+
+    <string name="stats_world_maxstage">Max stage</string>
+    <string name="stats_world_currentstage">Current stage</string>
+    <string name="stats_world_relicmult">Relic multiplier</string>
+    <string name="stats_world_breakpoint">Next breakpoint</string>
+    <string name="stats_world_prestigerelics">Relics from prestige</string>
+    <string name="stats_world_breakpointrelics">Relics at breakpoint</string>
+    <string name="stats_world_artifactseed">Artifact seed</string>
+    <string name="stats_world_weaponseed">Weapon seed</string>
+    <string name="stats_world_relics">Relics</string>
+    <string name="stats_world_totalgold">Total gold</string>
+    <string name="stats_world_goldlost">Gold lost (Prestige)</string>
+    <string name="stats_world_dpslost">DPS lost (Prestige)</string>
+    <string name="stats_world_totalrelics">Total relics</string>
+
+    <string name="stats_artifact_nameheader">Artifact</string>
+    <string name="stats_artifact_levelheader">Level</string>
+    <string name="stats_artifact_relicsheader">Total relics</string>
+
+    <string name="stats_herolevels_hero">Hero</string>
+    <string name="stats_herolevels_level">Level</string>
+    <string name="stats_herolevels_total">Total levels</string>
+
+    <string name="optimiser_settings_relics">Relics</string>
+    <string name="optimiser_settings_steps">Steps</string>
+    <string name="optimiser_settings_resetrelics">Reload</string>
+    <string name="optimiser_settings_heroheader">Hero levels presets</string>
+    <string name="optimiser_settings_useallrelics">Use all relics</string>
+    <string name="optimiser_settings_heros_fromsave">From save</string>
+    <string name="optimiser_settings_heros_all">All 2000</string>
+    <string name="optimiser_output_totals">Total Levels</string>
+    <string name="optimiser_output_steps">Steps</string>
+    <string name="optimiser_output_calc">Calculate</string>
+    <string name="optimiser_herolevels_hero">Hero</string>
+    <string name="optimiser_herolevels_level">Level</string>
+
+    <string name="sequencer_artifact_seed">Current Seed</string>
+    <string name="sequencer_artifact_sequenceheader">Artifact Sequence</string>
+    <string name="sequencer_artifact_sequencetable_nameheader">Artifact</string>
+    <string name="sequencer_artifact_sequencetable_salvageheader">Salvage?</string>
+
+    <string name="save_manage_savename">Save Name</string>
+    <string name="save_manage_editable">Editable?</string>
+    <string name="save_artifact_nameheader">Artifact</string>
+    <string name="save_artifact_levelheader">Level</string>
+    <string name="save_customisation_swordheader">Swords</string>
+    <string name="save_customisation_scarfheader">Scarves</string>
+    <string name="save_customisation_hatheader">Hats</string>
+    <string name="save_customisation_auraheader">Auras</string>
+    <string name="save_customisation_shirtheader">Clothes</string>
+    <string name="save_customisation_trailheader">Trails</string>
+
+    <string name="faqabout_about"><![CDATA[
+    <h1>Welcome to "Optimiser for Tap Titans"</h1>
+    This app has been created by <a href="http://www.reddit.com/user/titansmasher_">/u/Titansmasher_</a> as an android port of the ever popular <a href="http://yatto.me">YATTO<a/>
+    This app impliments all of the functionality of YATTO, and more! It has the ability to load your data directly from your game save file, meaning no more fiddling with values, its just tap and go.</br>
+    As you will have seen, there are 5 main areas to the app, each located on the home screen, as well as a sidebar used for save selection and changing world.<br/><br/>
+
+    <b><i>NOTE: If you see a little dashed square anywhere, tapping on it will pop that grid out into a floating panel, so you can look at it while playing tap titans!</i></b>
+
+    <h1>Statistics</h1>
+    The statistics page contains everything you could ever want to know about your Tap Titans game, showing both information that is and isnt available to you through the game.<br/>
+    It is split into 3 tabs for easy access and navigation:
+    <h4>Account</h4>
+    Under here is information about the basic stuff in the game, as well as information about what payments you have made in app, and how much you have spent in total
+
+    <h4>World</h4>
+    This tab contains all information specific to one world or another, such as your seed, relic counts and even when you reach your next breakpoint.
+
+    <h4>Artifact</h4>
+    This tab shows you all the information that the game saves about your artifacts. What level they are and how many relics you have spent in total on them!
+
+    <h4>Artifact</h4>
+    Shows you all your hero levels, in all their glory.
+
+    <h1>Optimiser</h1>
+    The most useful part of this app, the optimiser provides 4 different ways to optimise your relics based on what you currently have!
+
+    <h4>Settings</h4>
+    On the settings screen you can change the basic parameters for the calculations performed. Relics is the number of relics you have to spend,
+    the hero presets are in the next bit, and use all relics means that towards the end of the sequence, if you cant afford the most efficent
+    artifact, you will be told to buy the most efficent one that you can afford.
+
+    <h4>Hero Levels</h4>
+    On the hero levels page you can, not suprisingly, set the hero levels. Generally youll either want to use the "From Save" or "All 2000" from the settings page, but if you want to customise it then the options there
+
+    <h4>DMGE</h4>
+    This is the most used method for calculating the artifact order. This balances out Gold and Tdmg to provide the most efficent use of all artifacts.
+
+    <h4>TDMG</h4>
+    This method purely focuses on artifacts that influence your TDMG. This includes AD from artifacts, but AD is usually so small it comes second to the primary effect of the artifact.
+
+    <h4>GOLD</h4>
+    If you want to focus on how much gold you earn from a stage then use this method. All artifacts that dont affect gold get ignored however.
+
+    <h4>DMG</h4>
+    The simplest and fastest of the calculations, simply optimises the All Damage value that you see ingame, based on the artifacts AD and the multiplier from the Tincture artifacts.
+
+    <h1>Sequencer</h1>
+    Currently the sequencer only has one sequence that it calculates and thats the artifact sequence. If you wish to salvage an artifact at a step, simply check the box next to the artifact and your order will be recalculated
+
+    <h1>Save Manager</h1>
+    The save manager can be used to create mock saves that can be fed into the various calculators. These caves <b>CANNOT</b> be accessed ingame, and will never be used for modding.
+    You will not be able to edit the save imported from the game, but you can create a new save and clone the data from it instead.
+
+    <h4>Manage</h4>
+    Here is the basic functions for the Save Manager. The 4 buttons do basically what they say. Change Name changes the name of the current save, Add new Save adds a new blank save and selects it,
+    Delete save deletes the selected save, and copy from save allows you to copy data to the current save from another save.
+
+    <h4>Artifacts</h4>
+    On the artifacts page you are able to edit the level of each artifact, for use in the sequencer and the optimiser calculations. Once youve made your changes, dont forget to click save at the top
+
+    <h4>Custs</h4>
+    On the "Custs" page, you can edit the customisations in the current save. Simply check the box if you own it or not. Once youve made your changes, dont forget to click save at the top
+
+    ]]></string>
+    <string name="faqabout_faq"><![CDATA[<h1>What is this app?</h1>
 
     <p>This app is an android port of the ever popular <a href="http://yatto.me">YATTO.me</a> (Credit: <a href="https://www.reddit.com/user/colblitz">/u/colblitz</a>)
     made by <a href="https://www.reddit.com/user/titansmasher_">/u/Titansmasher_</a>.
     <br/>This apps main function is to read your save file and use the data from that to optimize your artifact levelling, and a few extras!</p>
 
-    <h1>How do I use it?</h1>
-
-    <p>The main uses of this app is to; optimize your relic spending, inform you as to your artifact sequence, and show you various "hidden" stats in the game<br/>
-    To get started, allow the app access to read your files.
-    This will allow the app to use your <a href="https://play.google.com/store/apps/details?id=com.gamehivecorp.taptitans">Tap Titans</a> save file to pre-populate all your data.
-    While this isn\'t required for the app to function, if you don\'t allow it then I would recommend just using <a href="http://yatto.me">Yatto.me</a> on your computer.<br/><br/>
-    Once done, you should now see all your game data for world 1 displayed on the \"Stats\" page.
-    From here, you can use the tabs at the top to change the page you are viewing and the sidebar to switch worlds or create a new mock save (More on that later)</p>
-
-    <h4>Stats</h4>
-
-    <p>The stats page is the apps landing page. Here you will be able to see all the general stats about the currently selected save file neatly organized into sections.<br/>
-    To view the stats for a different world, simply open the sidebar and tap on a different world! Couldn\'t be simpler</p>
-
-    <h4>Optimiser</h4>
-
-    <p>This page is the main feature of the app.
-    This is the main feature of the app. In simple terms the 4 bottons correspond to a method of working out what is the most efficient artifacts to spend your relics on.
-    This will show up to 100 purchases, or to your relic limit, whichever is smaller.<br/><br/>
-    <b>&#149; Gold</b> - optimize for greatest gold gains, should match up with the gold column in the AEC (with maybe slight differences for Future\'s Fortune)<br/>
-	<b>&#149; All damage</b> - optimize for all damage (just getting the highest percentage)<br/>
-	<b>&#149; Tap damage</b> - optimize for tap damage, which differs from all damage in that it also takes into consideration things like crits, hero levels, weapons, customizations, etc.<br/>
-	<b>&#149; Dmg Equivalent</b> - the newest method, uses the formula from <a href="http://redd.it/35e0wd">this thread</a> to convert gold increase to an equivalent damage increase in order to optimize for both at the same time<br/>
-    </p>
-
-    <h4>Sequencer</h4>
-
-    <p>The sequencer provides a way to work out what the order of your artifacts will be.
-    This is done by using the artifact seed for the selected world as a <a href="https://en.wikipedia.org/wiki/Random_seed">seed</a> for a RNG.
-    The order of artifacts can only be influenced by your decision to salvage or not. A more detailed explanation of how this is done can be found <a href="http://yatto.me/#/sequencer">here</a>
-    A sequencer for your weapons is also included, however this cannot be manipulated so its purely informative.</p>
-
-    <h4>Faq + About</h4>
-
-    <p>Well&#8230; youre already here so&#8230; its this page.</p>
-
     <h1>XXX is not working!</h1>
 
     <p>Send me a message on <a href="https://www.reddit.com/message/compose/?to=Titansmasher_">reddit</a> here with what your issue was and I\'ll see what I can do to help!</p>
 
-    <h1>Thanks and credits</h1>
+    <h1>I have some ideas for things you could add?</h1>
 
-    <p>
-        &#149;<a href="http://www.reddit.com/user/colblitz" class="ng-binding">/u/colblitz</a> for the original <a href="http://yatto.me/">YATTO.me</a><br/>
-        &#149;<a href="http://www.reddit.com/user/olaudix" class="ng-binding">/u/olaudix</a> for his original <a href="https://github.com/oLaudix/oLaudix.github.io">optimiser</a> that <a href="https://www.reddit.com/user/colblitz">/u/colblitz</a> got a bunch of formulas from<br/>
-		&#149;<a href="http://www.reddit.com/user/gxgx55" class="ng-binding">/u/gxgx55</a> and <a href="http://www.reddit.com/user/bsedmonds" class="ng-binding">/u/bsedmonds</a> for the current spreadsheets (<a href="http://redd.it/2xypot">here</a> and <a href="http://redd.it/303ngz">here</a>)<br/>
-		&#149;<a href="http://www.reddit.com/user/asynchronism" class="ng-binding">/u/asynchronism</a> for <a href="http://redd.it/32m0r4">the everything spreadsheet</a><br/>
-		&#149;<a href="http://www.reddit.com/user/einzen91" class="ng-binding">/u/einzen91</a> for <a href="http://redd.it/3162h7">stage progression times</a><br/>
-		&#149;<a href="http://www.reddit.com/user/TheDutchman88" class="ng-binding">/u/TheDutchman88</a> for <a href="http://redd.it/2u7scp">hero upgrade costs</a><br/>
-		&#149;<a href="http://www.reddit.com/user/contigi" class="ng-binding">/u/contigi</a> for <a href="http://redd.it/317usc">damage and gold formulas</a><br/>
-		&#149;<a href="http://www.reddit.com/user/ah_b" class="ng-binding">/u/ah_b</a> for the <a href="http://redd.it/35e0wd">relationship between gold and damage</a><br/>
-		&#149;<a href="http://www.reddit.com/user/raffishtenant" class="ng-binding">/u/raffishtenant</a> for the <a href="http://redd.it/33smgn">probability of completing weapon sets</a><br/>
-		&#149;<a href="http://www.reddit.com/user/LucasGaspar" class="ng-binding">/u/LucasGaspar</a> for the <a href="http://redd.it/32e49l">artifact sequencer</a><br/>
-		&#149;<a href="http://www.reddit.com/user/remarkable_flexatron" class="ng-binding">/u/remarkable_flexatron</a> for the <a href="http://redd.it/35i3tx">artifact sequence spreadsheet</a><br/>
-		&#149;<a href="http://www.reddit.com/user/ViperOus" class="ng-binding">/u/ViperOus</a> and <a href="http://www.reddit.com/user/TheHunterAsura" class="ng-binding">/u/TheHunterAsura</a> for helping to get <a href="https://redd.it/4ldri9">W2 artifact ids</a><br/>
-		&#149;<a href="http://www.reddit.com/user/contigi" class="ng-binding">/u/contigi</a> and <a href="http://www.reddit.com/user/MacaroonX" class="ng-binding">/u/MacaroonX</a> for updated W1 formulas<br/>
-		&#149;<a href="http://www.reddit.com/user/malohkan" class="ng-binding">/u/malohkan</a> for helping with the W2 sequencer<br/>
+    <p>Great! send me a message and ill look into adding them in the next version.</p>
+
+    <h1>Is there any way I can donate?</h1>
+
+    <p>Ok, so maybe this isnt a FAQ, but I thought id add it at the bottom :3 Yes, there is a donation page built into the app. if you click the three dots in the top right corner, and select "Donate",
+    you will be shown 2 donation links, one for myself (<a href="https://www.reddit.com/user/titansmasher_">/u/Titansmasher_</a>) and one for the artist, <a href="http://www.reddit.com/user/gal1gal222">/u/gal1gal222</a>
+    Feel free to donate as much or as little as you like, anything is appreciated :)</p>
+    ]]></string>
+    <string name="faqabout_credits"><![CDATA[<h1>Thanks and credits</h1>
+    
+    <p> Without these people this app wouldnt have been where it is now! Thanks everyone.<br/><br/>
+    <b>For direct help with the development of the app</b><br/><br/>
+        &#149;<a href="http://www.reddit.com/user/colblitz">/u/colblitz</a> for the original <a href="http://yatto.me/">YATTO.me</a><br/>
+        &#149;<a href="http://www.reddit.com/user/gal1gal222">xBard</a> for all of the custom artwork<br/>
+        &#149;<a href="http://www.gamehive.com/">GameHiveCorp</a> for allowing the use of their assets<br/><br/><br/>
+    <b>And for helping with the development of YATTO, and working out how the games internals work</b><br/><br/>
+        &#149;<a href="http://www.reddit.com/user/olaudix">/u/olaudix</a> for his original <a href="https://github.com/oLaudix/oLaudix.github.io">optimiser</a> that <a href="https://www.reddit.com/user/colblitz">/u/colblitz</a> got a bunch of formulas from<br/>
+		&#149;<a href="http://www.reddit.com/user/gxgx55">/u/gxgx55</a> and <a href="http://www.reddit.com/user/bsedmonds">/u/bsedmonds</a> for the current spreadsheets (<a href="http://redd.it/2xypot">here</a> and <a href="http://redd.it/303ngz">here</a>)<br/>
+		&#149;<a href="http://www.reddit.com/user/asynchronism">/u/asynchronism</a> for <a href="http://redd.it/32m0r4">the everything spreadsheet</a><br/>
+		&#149;<a href="http://www.reddit.com/user/einzen91">/u/einzen91</a> for <a href="http://redd.it/3162h7">stage progression times</a><br/>
+		&#149;<a href="http://www.reddit.com/user/TheDutchman88">/u/TheDutchman88</a> for <a href="http://redd.it/2u7scp">hero upgrade costs</a><br/>
+		&#149;<a href="http://www.reddit.com/user/contigi">/u/contigi</a> for <a href="http://redd.it/317usc">damage and gold formulas</a><br/>
+		&#149;<a href="http://www.reddit.com/user/ah_b">/u/ah_b</a> for the <a href="http://redd.it/35e0wd">relationship between gold and damage</a><br/>
+		&#149;<a href="http://www.reddit.com/user/raffishtenant">/u/raffishtenant</a> for the <a href="http://redd.it/33smgn">probability of completing weapon sets</a><br/>
+		&#149;<a href="http://www.reddit.com/user/LucasGaspar">/u/LucasGaspar</a> for the <a href="http://redd.it/32e49l">artifact sequencer</a><br/>
+		&#149;<a href="http://www.reddit.com/user/remarkable_flexatron">/u/remarkable_flexatron</a> for the <a href="http://redd.it/35i3tx">artifact sequence spreadsheet</a><br/>
+		&#149;<a href="http://www.reddit.com/user/ViperOus">/u/ViperOus</a> and <a href="http://www.reddit.com/user/TheHunterAsura">/u/TheHunterAsura</a> for helping to get <a href="https://redd.it/4ldri9">W2 artifact ids</a><br/>
+		&#149;<a href="http://www.reddit.com/user/contigi">/u/contigi</a> and <a href="http://www.reddit.com/user/MacaroonX">/u/MacaroonX</a> for updated W1 formulas<br/>
+		&#149;<a href="http://www.reddit.com/user/malohkan">/u/malohkan</a> for helping with the W2 sequencer<br/>
 	</p>]]></string>
 
-    <string name="game_diamonds1">180</string>
-    <string name="game_diamonds2">500</string>
-    <string name="game_diamonds3">1200</string>
-    <string name="game_diamonds4">3100</string>
-    <string name="game_diamonds5">6500</string>
-    <string name="game_diamonds6">14000</string>
-
-    <string name="stats_purchases_diamonds1">" • 180 diamonds"</string>
-    <string name="stats_purchases_diamonds2">" • 500 diamonds"</string>
-    <string name="stats_purchases_diamonds3">" • 1200 diamonds"</string>
-    <string name="stats_purchases_diamonds4">" • 3100 diamonds"</string>
-    <string name="stats_purchases_diamonds5">" • 6500 diamonds"</string>
-    <string name="stats_purchases_diamonds6">" • 14000 diamonds"</string>
 
     <string name="game_artifact1">Knight\'s Shield</string>
     <string name="game_artifact2">Amulet of the Valrunes</string>
@@ -163,64 +336,134 @@
     <string name="game_artifact69">Harp of Medea</string>
     <string name="game_artifact70">Inebriated Staff</string>
 
-    <string name="stats_account_header">Account</string>
-    <string name="stats_purchases_header">Purchases</string>
-    <string name="stats_world_header">World Specifics</string>
-    <string name="stats_artifact_header">Artifacts</string>
+    <string name="game_customisation3_0">Hero Sword</string>
+    <string name="game_customisation3_901">Knight Sword</string>
+    <string name="game_customisation3_902">Charlemagne</string>
+    <string name="game_customisation3_903">Ice Sword</string>
+    <string name="game_customisation3_904">Fire Sword</string>
+    <string name="game_customisation3_905">Mad Max</string>
+    <string name="game_customisation3_906">Purple Dragon</string>
+    <string name="game_customisation3_907">Warrior Blade</string>
+    <string name="game_customisation3_19">Skull Blade</string>
+    <string name="game_customisation3_3">Goofy Hammer</string>
+    <string name="game_customisation3_4">Carrot</string>
+    <string name="game_customisation3_29">Kunai</string>
+    <string name="game_customisation3_909">Colossus</string>
+    <string name="game_customisation3_22">Balloon</string>
+    <string name="game_customisation3_12">Spiky Sword</string>
+    <string name="game_customisation3_30">Laser Dagger</string>
+    <string name="game_customisation3_26">Broom</string>
+    <string name="game_customisation3_1">Curved Blade</string>
+    <string name="game_customisation3_13">Umbrella</string>
+    <string name="game_customisation3_5">Fencing Sword</string>
+    <string name="game_customisation3_15">Meat Hook</string>
+    <string name="game_customisation3_10">Popsicle</string>
+    <string name="game_customisation3_25">Golf Stick</string>
+    <string name="game_customisation3_20">Sai</string>
+    <string name="game_customisation3_21">Guitar</string>
+    <string name="game_customisation3_14">Wooden Sword</string>
+    <string name="game_customisation3_11">Scythe</string>
+    <string name="game_customisation3_7">Hola Sword</string>
+    <string name="game_customisation3_18">Poop</string>
+    <string name="game_customisation3_17">Wisdom Sword</string>
+    <string name="game_customisation3_28">Pixel Sword</string>
+    <string name="game_customisation1_0">Red</string>
+    <string name="game_customisation1_9">Shimmering</string>
+    <string name="game_customisation1_1">Blue</string>
+    <string name="game_customisation1_3">Blue Wrap</string>
+    <string name="game_customisation1_2">Green</string>
+    <string name="game_customisation1_11">Metallic</string>
+    <string name="game_customisation1_8">Red Wrap</string>
+    <string name="game_customisation1_4">Green Wrap</string>
+    <string name="game_customisation1_5">Yellow</string>
+    <string name="game_customisation1_6">Yellow Wrap</string>
+    <string name="game_customisation1_7">Purple</string>
+    <string name="game_customisation1_10">Brown</string>
+    <string name="game_customisation0_0">None</string>
+    <string name="game_customisation0_14">Top Hat</string>
+    <string name="game_customisation0_2">Blue Knight</string>
+    <string name="game_customisation0_3">Cat Hood</string>
+    <string name="game_customisation0_6">Ninja Mask</string>
+    <string name="game_customisation0_1">Astronaut Helmet</string>
+    <string name="game_customisation0_4">Cowboy Hat</string>
+    <string name="game_customisation0_5">Ice Cream Cone" ,  </string>
+    <string name="game_customisation0_8">Witch Hat</string>
+    <string name="game_customisation0_7">Pixel Helmet</string>
+    <string name="game_customisation0_9">Robot Helmet</string>
+    <string name="game_customisation0_10">Snowman Head</string>
+    <string name="game_customisation0_13">Water Melon</string>
+    <string name="game_customisation0_11">Bat</string>
+    <string name="game_customisation5_0">None</string>
+    <string name="game_customisation5_1">Stars</string>
+    <string name="game_customisation5_2">Thunderbolt</string>
+    <string name="game_customisation5_3">Electric</string>
+    <string name="game_customisation5_5">Eminence Light</string>
+    <string name="game_customisation5_4">Flame</string>
+    <string name="game_customisation5_8">Spiky</string>
+    <string name="game_customisation5_6">Leaf Shield</string>
+    <string name="game_customisation5_7">Resurrection Light"</string>
+    <string name="game_customisation5_9">Skulls</string>
+    <string name="game_customisation5_10">Bubbles</string>
+    <string name="game_customisation2_0">Hero Suit</string>
+    <string name="game_customisation2_3">Casual</string>
+    <string name="game_customisation2_1">Astronaut</string>
+    <string name="game_customisation2_2">Blue Knight</string>
+    <string name="game_customisation2_4">Cat Suit</string>
+    <string name="game_customisation2_6">Ninja</string>
+    <string name="game_customisation2_14">Purple Wizard</string>
+    <string name="game_customisation2_10">Saiyan</string>
+    <string name="game_customisation2_13">Pyjamas</string>
+    <string name="game_customisation2_8">Renaissance</string>
+    <string name="game_customisation2_9">Robot</string>
+    <string name="game_customisation2_11">Snowman</string>
+    <string name="game_customisation2_12">Storm Armor</string>
+    <string name="game_customisation2_17">Green Knight</string>
+    <string name="game_customisation2_16">White and Gold</string>
+    <string name="game_customisation2_5">Grey Knight</string>
+    <string name="game_customisation2_15">Casual2</string>
+    <string name="game_customisation4_0">White</string>
+    <string name="game_customisation4_1">Cool Blue</string>
+    <string name="game_customisation4_2">Rainbow</string>
+    <string name="game_customisation4_3">Dirt</string>
+    <string name="game_customisation4_4">Flame</string>
+    <string name="game_customisation4_5">Ice</string>
+    <string name="game_customisation4_6">Lightning Blue</string>
+    <string name="game_customisation4_7">Fiery Red</string>
+    <string name="game_customisation4_8">Passion</string>
+    <string name="game_customisation4_9">Shadow</string>
+    <string name="game_customisation4_10">Water</string>
 
-    <string name="stats_account_playername">Player name</string>
-    <string name="stats_account_friendcode">Friend code</string>
-    <string name="stats_account_playerlevel">Player level</string>
-    <string name="stats_account_lastactive">Last active</string>
-    <string name="stats_account_playtime">Play time</string>
-    <string name="stats_account_diamonds">Diamonds</string>
-    <string name="stats_account_artifactseed">Artifact seed</string>
-    <string name="stats_account_weaponseed">Weapon seed</string>
-    <string name="stats_account_timesincesync">Time since sync</string>
-    <string name="stats_account_dungeonchain">Daily dungeon #</string>
-    <string name="stats_account_lastcloudsave">Last cloud save</string>
-    <string name="stats_account_ischeater">Cheater?</string>
-    <string name="stats_account_cheatercount">" • Times cheated"</string>
-    <string name="stats_account_cheaterreason">" • Cheater reason"</string>
-
-    <string name="stats_purchases_purchasecount">Purchase count</string>
-    <string name="stats_purchases_spendamount">Total spent (USD)</string>
-    <string name="stats_purchases_unapprovedpurchases">Unapproved purchases</string>
-    <string name="stats_purchases_purchaseslist">Purchases:</string>
-
-    <string name="stats_world_maxstage">Max stage</string>
-    <string name="stats_world_currentstage">Current stage</string>
-    <string name="stats_world_relics">Relics</string>
-    <string name="stats_world_totalgold">Total gold</string>
-    <string name="stats_world_goldlost">Gold lost (Prestige)</string>
-    <string name="stats_world_dpslost">DPS lost (Prestige)</string>
-    <string name="stats_world_totalrelics">Total relics</string>
-
-    <string name="stats_artifact_nameheader">Artifact</string>
-    <string name="stats_artifact_levelheader">Level</string>
-    <string name="stats_artifact_relicsheader">Total relics</string>
-
-
-    <string name="sequencer_seed">Artifact seed</string>
-    <string name="sequencer_button_artifactpriorities_show">Show priorities</string>
-    <string name="sequencer_button_artifactpriorities_hide">Hide priorities</string>
-
-    <string name="sequencer_artifact_nameheader">Artifact</string>
-    <string name="sequencer_artifact_ownedheader">Owned</string>
-    <string name="sequencer_artifact_priorityheader">Priority</string>
-    <string name="sequencer_outputheader">Artifact sequence</string>
-    <string name="sequencer_optimiserheader">Optimised Sequence</string>
-    <string name="sequencer_order_nameheader">Artifact</string>
-    <string name="sequencer_order_salvageheader">Salvage?</string>
-
-    <string name="optimiser_sequenceheader">Purchase Order</string>
-    <string name="optimiser_totalsheader">Totals</string>
-    <string name="optimiser_dmgbutton">DMG</string>
-    <string name="optimiser_goldbutton">Gold</string>
-    <string name="optimiser_tdmgbutton">TDMG</string>
-    <string name="optimiser_dmgebutton">DMGE</string>
-    <string name="optimiser_nextbreakpoint">Next breakpoint</string>
-    <string name="optimiser_prestigerelics">Relics from prestige</string>
-    <string name="optimiser_breakpointrelics">Relics at next breakpoint</string>
-    <string name="optimiser_currentrelics">Current relics</string>
+    <string name="game_hero_1">Takeda the Blade Assassin</string>
+    <string name="game_hero_2">Contessa the Torch Wielder</string>
+    <string name="game_hero_3">Hornetta, Queen of the Valrunes</string>
+    <string name="game_hero_4">Mila the Hammer Stomper</string>
+    <string name="game_hero_5">Terra the Land Scorcher</string>
+    <string name="game_hero_6">Inquisireaux the Terrible</string>
+    <string name="game_hero_7">Charlotte the Special</string>
+    <string name="game_hero_8">Jordaan, Knight of Mini</string>
+    <string name="game_hero_9">Jukka, Master of Axes</string>
+    <string name="game_hero_10">Milo and Clonk-Clonk</string>
+    <string name="game_hero_11">Macelord the Ruthless</string>
+    <string name="game_hero_12">Gertrude the Goat Rider</string>
+    <string name="game_hero_13">Twitterella the Tweeter</string>
+    <string name="game_hero_14">Master Hawk, Lord of Luft</string>
+    <string name="game_hero_15">Elpha, Wielder of Gems</string>
+    <string name="game_hero_16">Poppy, Daughter of Ceremony</string>
+    <string name="game_hero_17">Skulptor, Protector of Bridges</string>
+    <string name="game_hero_18">Sterling the Enchantor</string>
+    <string name="game_hero_19">Orba the Foreseer</string>
+    <string name="game_hero_20">Remus the Noble Archer</string>
+    <string name="game_hero_21">Mikey the Magician Apprentice</string>
+    <string name="game_hero_22">Peter Pricker the Prickly Poker</string>
+    <string name="game_hero_23">Teeny Tom, Keeper of the Castle</string>
+    <string name="game_hero_24">Deznis the Cleanser</string>
+    <string name="game_hero_25">Hamlette, Painter of Skulls</string>
+    <string name="game_hero_26">Eistor the Banisher</string>
+    <string name="game_hero_27">Flavius and Oinksbjorn</string>
+    <string name="game_hero_28">Chester the Beast Tamer</string>
+    <string name="game_hero_29">Mohacas the Wind Warrior</string>
+    <string name="game_hero_30">Jaqulin the Unknown</string>
+    <string name="game_hero_31">Pixie the Rebel Fairy</string>
+    <string name="game_hero_32">Jackalope the Fireballer</string>
+    <string name="game_hero_33">Dark Lord, Punisher of All</string>
 </resources>

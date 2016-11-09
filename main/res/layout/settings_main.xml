@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp">
+
+    <TextView
+        android:text="Permissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:text="@string/settings_howtorevoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:text="Read External Storage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_readexternalstorage"
+                android:clickable="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:text="Request"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_requestreadexternalstorage"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:text="Can draw over Apps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_drawoverapps"
+                android:clickable="false"
+                android:layout_weight="1"/>
+
+            <Button
+                android:text="Request"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_requestdrawoverapps"
+                android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:text="Opt in for beta!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_optinbeta"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:text="@string/settings_betadesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:text="View the source on Github"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_sourcelink"/>
+
+</LinearLayout>

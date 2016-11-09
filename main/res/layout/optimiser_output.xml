@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:text="@string/optimiser_output_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optimiser_output_calculate"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:text="@string/optimiser_output_totals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/optimiser_totalsheader"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingRight="16dp"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/optimiser_artifact_floatview"
+            android:adjustViewBounds="true"
+            android:background="@color/transparent"
+            app:srcCompat="?android:attr/actionModeSelectAllDrawable"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optimiser_artifact_totaltable"
+        android:stretchColumns="0,1,2"
+        android:background="@android:color/background_light"
+        android:animateLayoutChanges="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Click calculate to get sequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <ProgressBar
+        android:id="@+id/optimiser_loading_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:text="@string/optimiser_output_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optimiser_orderheader"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:paddingTop="16dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optimiser_artifact_sequencetable"
+        android:stretchColumns="1,2,3"
+        android:animateLayoutChanges="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Click calculate to get sequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <ProgressBar
+        android:id="@+id/optimiser_loading_sequence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

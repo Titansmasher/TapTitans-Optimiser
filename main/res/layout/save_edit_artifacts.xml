@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:animateLayoutChanges="true"
+              android:orientation="vertical">
+
+    <Button
+        android:text="Save changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_artifact_savechanges"/>
+
+    <TextView
+        android:text="The save file selected is not editable. Please change save file to edit the artifact info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_artifact_noedits"/>
+
+    <TableLayout
+        android:id="@+id/save_artifacts_artifacttable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:stretchColumns="0,1,2"
+        android:animateLayoutChanges="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_artifact_nameheader"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_artifact_levelheader"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact1"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact1_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact2"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact2_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact3"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact3_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact4"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact4_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact5"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact5_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact6"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact6_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact7"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact7_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact8"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact8_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact9"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact9_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact10"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact10_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact11"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact11_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact12"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact12_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact13"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact13_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact14"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact14_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact15"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact15_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact16"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact16_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact17"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact17_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact18"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact18_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact19"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact19_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact20"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact20_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact21"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact21_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact22"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact22_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact23"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact23_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact24"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact24_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact25"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact25_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact26"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact26_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact27"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact27_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact28"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact28_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact29"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact29_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact30"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact30_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact31"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact31_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact32"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact32_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact33"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact33_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact34"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact34_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact35"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact35_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact36"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact36_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact37"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact37_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact38"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact38_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact39"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact39_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact40"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact40_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact41"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact41_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact42"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact42_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact43"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact43_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact44"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact44_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact45"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact45_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact46"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact46_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact47"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact47_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact48"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact48_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact49"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact49_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact50"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact50_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact51"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact51_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact52"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact52_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact53"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact53_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact54"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact54_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact55"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact55_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact56"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact56_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact57"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact57_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact58"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact58_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact59"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact59_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact60"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact60_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact61"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact61_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact62"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact62_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact63"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact63_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact64"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact64_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact65"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact65_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact66"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact66_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact67"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact67_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact68"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact68_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/row_alternate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact69"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact69_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_artifact70"/>
+
+            <EditText
+                android:id="@+id/save_artifacts_artifact70_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
